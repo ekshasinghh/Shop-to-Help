@@ -1,0 +1,186 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>cart</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/cart.css">
+
+    
+	<link rel="stylesheet" href="css/style.css">
+    
+</head>
+
+<body>
+    <nav class="navbar navbar-light justify-content-between">
+       
+  <a class="navbar-brand" href="index.html"><img  class="logoimg" src="images/logo-1.png" height="50px" width="40%"></a>
+   
+  <form class="form-inline">
+    <img  class="logoimg" src="images/cart2.png" height="70px" width="80%">
+  </form>
+</nav>
+    <hr>
+      	
+  <main>
+      
+    <div class="basket">
+      
+      <div class="basket-labels">
+        <ul>
+            <li class="item item-heading"><b>Item</b></li>
+            <li class="price"><b>Price</b></li>
+            <li class="quantity"><b>Quantity</b></li>
+            <li class="subtotal"><b>Subtotal</b></li>
+        </ul>
+      </div>
+      <div class="basket-product">
+        <div class="item">
+          <div class="product-image">
+            <img class="picg" src="images/Black1.png" alt="Placholder Image 2" class="product-frame">
+          </div>
+          <div class="product-details">
+            <h1><strong><span class="item-quantity">4</span> x Eliza J</strong> Lace Sleeve Cuff Dress</h1>
+            <p><strong>Navy, Size 18</strong></p>
+            <p>Product Code - 232321939</p>
+          </div>
+        </div>
+        <div class="price">26.00</div>
+        <div class="quantity">
+          <input type="number" value="4" min="1" class="quantity-field">
+        </div>
+        <div class="subtotal">104.00</div>
+        <div class="remove">
+            <button><b>Remove</b></button>
+            <button><b>Add to Wishlist</b></button>
+        </div>
+      </div>
+      <div class="basket-product">
+        <div class="item">
+          <div class="product-image">
+            <img class="picg" src="images/Peach1.png" alt="Placholder Image 2" class="product-frame">
+          </div>
+          <div class="product-details">
+            <h1><strong><span class="item-quantity">1</span> x Whistles</strong> Amella Lace Midi Dress</h1>
+            <p><strong>Navy, Size 10</strong></p>
+            <p>Product Code - 232321939</p>
+          </div>
+        </div>
+        <div class="price">26.00</div>
+        <div class="quantity">
+          <input type="number" value="1" min="1" class="quantity-field">
+        </div>
+        <div class="subtotal">26.00</div>
+        <div class="remove">
+            <button><b>Remove</b></button>
+            <button><b>Add to Wishlist</b></button>
+        </div>
+      </div>
+    </div>
+    <aside>
+      <div class="summary">
+          <div class="summary-total-items"><span class="total-items"></span><b>Items in your Bag</b></div>
+        <div class="summary-subtotal">
+          <div class="subtotal-title">Subtotal</div>
+          <div class="subtotal-value final-value" id="basket-subtotal">130.00</div>
+          <div class="summary-promo hide">
+            <div class="promo-title">Promotion</div>
+            <div class="promo-value final-value" id="basket-promo"></div>
+          </div>
+        </div>
+        <div class="summary-delivery">
+          <select name="delivery-collection" class="summary-delivery-selection">
+              <option value="0" selected="selected">Select Collection or Delivery</option>
+             <option value="collection">Collection</option>
+             <option value="first-class">Royal Mail 1st Class</option>
+             <option value="second-class">Royal Mail 2nd Class</option>
+             <option value="signed-for">Royal Mail Special Delivery</option>
+          </select>
+        </div>
+        <div class="summary-total">
+          <div class="total-title">Total</div>
+          <div class="total-value final-value" id="basket-total">130.00</div>
+        </div>
+        <div class="summary-checkout">
+            <button class="checkout-cta"><b>Go to Secure Checkout</b></button>
+        </div>
+      </div>
+        <div class="basket-module">
+          <label for="promo-code"><b>Enter a promotional code</b></label>
+        <input id="promo-code" type="text" name="promo-code" maxlength="5" class="promo-code-field">
+          <button class="promo-code-cta"><b>APPLY</b></button>
+      </div>
+    </aside>
+  </main>
+
+
+  <footer id="fh5co-footer" role="contentinfo">
+		<div class="container">
+			<div class="row row-pb-md">
+				<div class="col-md-4 fh5co-widget">
+					<img src="images/logo-2.png" alt="shopegezy" width="70%">
+				</div>
+				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
+					<br>
+					<ul class="fh5co-footer-links">
+						<li><a href="#">Women</a></li>
+						<li><a href="#">Men</a></li>
+						<li><a href="#">Boys</a></li>
+						<li><a href="#">Girls</a></li>
+						<li><a href="#">Designers</a></li>
+					</ul>
+				</div>
+				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
+					<br>
+					<ul class="fh5co-footer-links">
+						<li><a href="#">About</a></li>
+						<li><a href="#">Help</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">Terms</a></li>
+						<li><a href="#">Meetups</a></li>
+					</ul>
+				</div>
+
+				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
+					<br>
+					<ul class="fh5co-footer-links">
+						<li><a href="#">Shop</a></li>
+						<li><a href="#">Privacy</a></li>
+						<li><a href="#">Testimonials</a></li>
+						<li><a href="#">Handbook</a></li>
+						<li><a href="#">Held Desk</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="row copyright">
+				<div class="col-md-12 text-center">
+					<p>
+						<small class="block">&copy; Shopagezy 2020. All Rights Reserved.</small> 
+					</p>
+					<p>
+						<ul class="fh5co-social-icons">
+							<li><a href="#"><i class="icon-twitter"></i></a></li>
+							<li><a href="#"><i class="icon-facebook"></i></a></li>
+							<li><a href="#"><i class="icon-linkedin"></i></a></li>
+							<li><a href="#"><i class="icon-dribbble"></i></a></li>
+						</ul>
+					</p>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+    
+    <script src="js/cart.js"></script>
+    
+</body>
+
+</html>

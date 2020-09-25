@@ -1,0 +1,65 @@
+.btn{
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    position:relative;
+    display:inline-block;
+    overflow:hidden;
+    height:53px;
+    border-radius:6px;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    line-height:30px;
+    font-size:16px;
+    font-weight:bold;
+    text-shadow:0px 1px 1px #888;
+}
+.btn span.icon,.btn span.title{
+    display:block;
+    position:relative;
+    line-height:50px;
+    padding:0 30px;
+    border-radius:6px;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+}
+.btn span.left{
+    float:left;
+    border-radius:6px 0 0 6px;
+    -moz-border-radius:6px 0 0 6px;
+    -webkit-border-radius:6px 0 0 6px;
+}
+.btn span.right{
+    float:right;
+    border-radius:0 6px 6px 0;
+    -moz-border-radius:0 6px 6px 0;
+    -webkit-border-radius:0 6px 6px 0;
+}
+.btn span.title{
+    -webkit-box-shadow:0 3px 0 0 #00ae94;
+    box-shadow:0 3px 0 0 #00ae94;
+    background-color:#00cdae;
+}
+.btn span.arrow-left{
+    position:absolute;
+    width:0;
+    height:0;
+    border-top:25px solid transparent;
+    border-bottom:25px solid transparent;
+    -webkit-transition:all .15s;
+    -webkit-transition-property:left,right;
+    transition-property:left,right;
+}
+.btn.right span.arrow-left{
+    right:0;
+    -webkit-box-shadow:10px 0 0 0 #00967f,10px 3px 0 0 #007261;
+    box-shadow:10px 0 0 0 #00967f,10px 3px 0 0 #007261;
+    border-right:10px solid #00967f;
+}
+.btn:hover span.arrow-left{
+    right:10px;
+}  
+
+.left.title{
+    display: none;
+}
